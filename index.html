@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio pessoal de Melissa — Estudante do curso técnico de Tecnologia da Informação (TI), desenvolvimento web e projetos criativos.">
+  <meta name="author" content="Melissa">
+  <meta name="theme-color" content="#FAF8F5">
+
+  <title>Melissa — Portfólio Pessoal | Tecnologia &amp; Criatividade</title>
+
+  <!-- Favicon com monograma delicado -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Fontes do Google: Cormorant Garamond (editorial/delicada) e Poppins (moderna/legível) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos Personalizados -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       CABEÇALHO & NAVEGAÇÃO FIXA
+       ====================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <!-- Identidade Visual "Melissa" -->
+      <a href="#sobre" class="brand-link" aria-label="Ir para a página inicial de Melissa">
+        <span class="brand-monogram">M</span>
+        <span class="brand-name">Melissa<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Menu Desktop -->
+      <nav class="nav-desktop" aria-label="Navegação principal">
+        <a href="#sobre" class="nav-link active">Sobre mim</a>
+        <a href="#projetos" class="nav-link">Projetos</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <!-- Botão Hambúrguer Mobile -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav-mobile">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Gaveta de Navegação Mobile -->
+    <nav class="nav-mobile" id="nav-mobile" aria-label="Navegação móvel">
+      <a href="#sobre" class="nav-link">Sobre mim</a>
+      <a href="#projetos" class="nav-link">Projetos</a>
+      <a href="#contato" class="nav-link">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ====================================================================
+         SEÇÃO 1 — SOBRE MIM
+         ==================================================================== -->
+    <section id="sobre" class="section-block section-about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Coluna Textual: Destaque do Nome & Apresentação -->
+          <div class="about-content reveal-on-scroll">
+            <span class="about-eyebrow">01 / Apresentação</span>
+
+            <!-- Nome Melissa em Destaque Marcante e Elegante -->
+            <h1 class="about-hero-name">
+              Olá, eu sou a <br>
+              <span class="name-italic">Melissa</span><span class="name-sparkle">✦</span>
+            </h1>
+
+            <!-- Texto Oficial de Apresentação -->
+            <p class="about-bio-lead">
+              Olá! Meu nome é <strong>Melissa</strong>. Sou estudante do curso técnico de <strong>Tecnologia da Informação (TI)</strong> e também faço aulas de inglês. Sou uma pessoa proativa, dedicada e criativa, sempre em busca de novos conhecimentos e oportunidades para desenvolver minhas habilidades. Tenho interesse em tecnologia, desenvolvimento web e criação de projetos que unam funcionalidade e criatividade.
+            </p>
+
+            <!-- Pílulas de Competências e Habilidades -->
+            <div class="skills-group">
+              <span class="skills-label">Áreas de Conhecimento &amp; Interesses</span>
+              <div class="skills-pills">
+                <span class="skill-pill">
+                  <span class="pill-dot"></span> Técnico em TI
+                </span>
+                <span class="skill-pill">
+                  <span class="pill-dot"></span> Aulas de Inglês
+                </span>
+                <span class="skill-pill">
+                  <span class="pill-dot"></span> Desenvolvimento Web
+                </span>
+                <span class="skill-pill">
+                  <span class="pill-dot"></span> HTML5 &amp; CSS3
+                </span>
+                <span class="skill-pill">
+                  <span class="pill-dot"></span> JavaScript
+                </span>
+                <span class="skill-pill">
+                  <span class="pill-dot"></span> Design &amp; Criatividade
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna Visual: Moldura Fotográfica Delicada & Espaço Reservado -->
+          <div class="about-photo-wrapper reveal-on-scroll reveal-delay-1">
+            <div class="photo-card">
+              <!-- Moldura interna artística com SVG delicado de espaço reservado -->
+              <div class="photo-frame-inner">
+                <img
+                  id="personal-photo-img"
+                  class="personal-photo-img"
+                  src="assets/images/avatar-placeholder.svg"
+                  alt="Espaço reservado para a fotografia pessoal de Melissa"
+                  width="440"
+                  height="528"
+                  loading="eager"
+                >
+              </div>
+
+              <!-- Rodapé da Moldura com Botão de Personalização -->
+              <div class="photo-interactive-footer">
+                <div class="photo-info-text">
+                  <strong>Espaço para sua fotografia</strong>
+                  <span>Personalize facilmente quando desejar</span>
+                </div>
+                <button
+                  type="button"
+                  id="btn-open-photo-modal"
+                  class="btn-photo-custom"
+                  title="Clique para carregar sua foto em tempo real"
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                    <circle cx="12" cy="13" r="4"></circle>
+                  </svg>
+                  <span>Personalizar</span>
+                </button>
+              </div>
+
+              <!-- Cartão Flutuante Sofisticado -->
+              <div class="badge-floating-quote">
+                <span class="quote-icon">✦</span>
+                <p>Criando experiências digitais com elegância, sensibilidade e tecnologia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SEÇÃO 2 — MEUS PROJETOS
+         ==================================================================== -->
+    <section id="projetos" class="section-block section-projects">
+      <div class="container">
+        <!-- Cabeçalho Editorial da Seção -->
+        <header class="section-header reveal-on-scroll">
+          <span class="section-tag">02 / Portfólio</span>
+          <h2 class="section-title">Meus projetos</h2>
+          <p class="section-subtitle">
+            Criações desenvolvidas com foco na união entre funcionalidade prática, raciocínio lógico e estética refinada.
+          </p>
+          <div class="delicate-divider">
+            <span>✦</span>
+          </div>
+        </header>
+
+        <!-- Galeria Organizada de Projetos -->
+        <div class="projects-grid">
+          <!-- PROJETO 1: Jogo Cidade ("Cidade em Caos") -->
+          <article class="project-card reveal-on-scroll reveal-delay-1">
+            <div class="project-card-header">
+              <span class="project-number">01</span>
+              <span class="project-badge-type">Estratégia &amp; Canvas</span>
+            </div>
+
+            <div class="project-media-wrap">
+              <img
+                src="assets/images/preview-cidade.svg"
+                alt="Interface do jogo de simulação e estratégia urbana Cidade em Caos"
+                class="project-preview-img"
+                width="800"
+                height="500"
+                loading="lazy"
+              >
+              <div class="project-media-overlay">
+                <span class="overlay-pill-hint">
+                  <span>Explorar simulação</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Jogo Cidade — Cidade em Caos</h3>
+              <p class="project-description">
+                Jogo de gerenciamento e estratégia urbana em tempo real desenvolvido com HTML5 Canvas e JavaScript modular. O usuário assume o papel de prefeito metropolitano, administrando tesouro, produção de energia, população e satisfação pública, enquanto gerencia trânsito e soluciona desastres urbanos (como incêndios e apagões) para evitar o colapso da cidade.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5 Canvas</span>
+                <span class="tech-tag">JavaScript (ES6+)</span>
+                <span class="tech-tag">Simulação Isométrica</span>
+                <span class="tech-tag">Gestão de Recursos</span>
+              </div>
+
+              <a
+                href="http://jogocidade.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-view-project"
+                aria-label="Visualizar projeto Jogo Cidade em nova aba"
+              >
+                <span>Visualizar projeto</span>
+                <span class="btn-arrow-icon">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJETO 2: Skin ("Skin Mel") -->
+          <article class="project-card reveal-on-scroll reveal-delay-2">
+            <div class="project-card-header">
+              <span class="project-number">02</span>
+              <span class="project-badge-type">Plataforma Web Gamer</span>
+            </div>
+
+            <div class="project-media-wrap">
+              <img
+                src="assets/images/preview-skin.svg"
+                alt="Plataforma de skins gamer e sistema de autenticação Skin Mel"
+                class="project-preview-img"
+                width="800"
+                height="500"
+                loading="lazy"
+              >
+              <div class="project-media-overlay">
+                <span class="overlay-pill-hint">
+                  <span>Explorar plataforma</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Skin — Skin Mel</h3>
+              <p class="project-description">
+                Plataforma web temática voltada para a comunidade gamer, construída com HTML, CSS e JavaScript. O projeto conta com um fluxo dinâmico de autenticação (telas integradas de Login e Cadastro com alternância de formulários) e uma vitrine estruturada para apresentação de skins personalizadas de jogos populares, como Minecraft e customizações veiculares de Rocket League.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML Semântico</span>
+                <span class="tech-tag">CSS Responsivo</span>
+                <span class="tech-tag">Autenticação &amp; Formulários</span>
+                <span class="tech-tag">Catálogo Gamer</span>
+              </div>
+
+              <a
+                href="https://skin-ochre.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-view-project"
+                aria-label="Visualizar projeto Skin em nova aba"
+              >
+                <span>Visualizar projeto</span>
+                <span class="btn-arrow-icon">↗</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SEÇÃO 3 — CONTATO
+         ==================================================================== -->
+    <section id="contato" class="section-block section-contact">
+      <div class="container">
+        <!-- Cabeçalho da Seção -->
+        <header class="section-header reveal-on-scroll">
+          <span class="section-tag">03 / Contato</span>
+          <h2 class="section-title">Vamos nos conectar?</h2>
+          <p class="section-subtitle">
+            Estou sempre aberta a novas conexões, aprendizados e trocas de experiências sobre tecnologia e desenvolvimento web.
+          </p>
+          <div class="delicate-divider">
+            <span>✦</span>
+          </div>
+        </header>
+
+        <!-- Layout de Contato (Informações & Formulário) -->
+        <div class="contact-layout">
+          <!-- Coluna 1: Informações e Canais Diretos -->
+          <div class="contact-info-col reveal-on-scroll">
+            <p class="contact-lead">
+              Gostou dos projetos ou tem interesse em colaborar? Fique à vontade para me acompanhar nas redes sociais ou enviar uma mensagem por aqui.
+            </p>
+
+            <div class="contact-channels">
+              <!-- Instagram Oficial -->
+              <a
+                href="https://www.instagram.com/souzz_mell/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="channel-card"
+                aria-label="Instagram de Melissa: @souzz_mell (abre em nova aba)"
+              >
+                <div class="channel-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </div>
+                <div class="channel-texts">
+                  <span class="channel-label">Instagram</span>
+                  <span class="channel-value">@souzz_mell</span>
+                </div>
+                <span class="channel-badge">Seguir ↗</span>
+              </a>
+
+              <!-- E-mail Demonstrativo (fácil de editar) -->
+              <!-- DICA: Para alterar o e-mail, basta editar o endereço abaixo -->
+              <a
+                href="mailto:melissa.contato@example.com"
+                class="channel-card"
+                aria-label="Enviar e-mail para melissa.contato@example.com"
+              >
+                <div class="channel-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="channel-texts">
+                  <span class="channel-label">E-mail</span>
+                  <span class="channel-value">melissa.contato@example.com</span>
+                </div>
+                <span class="channel-badge">Escrever ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Coluna 2: Formulário de Contato com Validação -->
+          <div class="contact-form-col reveal-on-scroll reveal-delay-1">
+            <div class="form-header-note">
+              <h3>Envie uma mensagem</h3>
+              <p>Preencha os campos abaixo para iniciar uma conversa.</p>
+            </div>
+
+            <form id="contact-form" novalidate>
+              <!-- Campo Nome -->
+              <div class="form-group">
+                <label for="nome" class="form-label">
+                  Seu Nome <span class="required-dot">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  class="form-input"
+                  placeholder="Como posso te chamar?"
+                  required
+                  minlength="2"
+                  autocomplete="name"
+                >
+                <span class="input-error-msg">Por favor, informe seu nome (mínimo de 2 caracteres).</span>
+              </div>
+
+              <!-- Campo E-mail -->
+              <div class="form-group">
+                <label for="email" class="form-label">
+                  Seu E-mail <span class="required-dot">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="exemplo@dominio.com"
+                  required
+                  autocomplete="email"
+                >
+                <span class="input-error-msg">Por favor, insira um endereço de e-mail válido.</span>
+              </div>
+
+              <!-- Campo Mensagem -->
+              <div class="form-group">
+                <label for="mensagem" class="form-label">
+                  Mensagem <span class="required-dot">*</span>
+                </label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  class="form-textarea"
+                  placeholder="Escreva sua mensagem aqui..."
+                  required
+                  minlength="6"
+                  rows="4"
+                ></textarea>
+                <span class="input-error-msg">Por favor, escreva sua mensagem (mínimo de 6 caracteres).</span>
+              </div>
+
+              <!-- Botão de Envio -->
+              <button type="submit" class="btn-submit" id="btn-submit">
+                <span>Enviar mensagem</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <!-- Aviso de Modo Demonstrativo Exigido -->
+              <div class="demo-banner">
+                <span class="demo-icon">ℹ</span>
+                <span>
+                  <strong>Aviso de demonstração:</strong> Este formulário foi implementado para fins acadêmicos e pedagógicos. Em conformidade com o projeto, ele valida os campos localmente em modo demonstrativo.
+                </span>
+              </div>
+
+              <!-- Caixa de Confirmação Interativa de Envio (Modo Demonstrativo) -->
+              <div class="form-feedback-modal" id="form-feedback" role="alert" aria-live="polite">
+                <div class="feedback-title">
+                  <span>✦</span>
+                  <span>Mensagem recebida com sucesso!</span>
+                </div>
+                <p class="feedback-body">
+                  Obrigada pelo contato! Como este site faz parte de um projeto escolar em ambiente demonstrativo, os dados não foram disparados para um servidor de produção externo. Para falar diretamente comigo, utilize o Instagram <strong>@souzz_mell</strong> ou o e-mail de contato acima.
+                </p>
+                <button type="button" class="btn-reset-form" id="btn-reset-form">
+                  ← Enviar outra mensagem de teste
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       RODAPÉ (FOOTER)
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        Melissa<span>.</span>
+      </div>
+      <div class="footer-copy">
+        © 2026 Melissa • Portfólio de Desenvolvimento Web &amp; TI • Criado com elegância &amp; dedicação.
+      </div>
+      <div class="footer-links">
+        <a href="#sobre">Sobre mim</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       MODAL DE PERSONALIZAÇÃO DE FOTOGRAFIA
+       (Permite a Melissa testar uma foto real no navegador a qualquer momento)
+       ====================================================================== -->
+  <div class="photo-modal-backdrop" id="photo-modal" role="dialog" aria-modal="true" aria-labelledby="photo-modal-title">
+    <div class="photo-modal-card">
+      <h3 id="photo-modal-title">Personalizar Fotografia</h3>
+      <p>
+        Você pode selecionar uma foto pessoal do seu computador para pré-visualizar imediatamente no seu portfólio, ou manter a ilustração artística delicada padrão.
+      </p>
+
+      <label class="photo-upload-zone" for="photo-file-input">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C84B71" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto 10px;">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+          <circle cx="8.5" cy="8.5" r="1.5"></circle>
+          <polyline points="21 15 16 10 5 21"></polyline>
+        </svg>
+        <span style="display:block; font-weight: 600; color: #2A2426; font-size: 0.95rem;">Clique para escolher sua foto</span>
+        <span style="display:block; font-size: 0.8rem; color: #6E6165; margin-top: 4px;">Formatos: JPG, PNG, WEBP</span>
+        <input type="file" id="photo-file-input" accept="image/*" style="display: none;">
+      </label>
+
+      <div class="modal-actions">
+        <button type="button" class="btn-secondary" id="btn-restore-default-photo">
+          Restaurar Ilustração
+        </button>
+        <button type="button" class="btn-primary-small" id="btn-close-photo-modal">
+          Fechar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts Principais -->
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

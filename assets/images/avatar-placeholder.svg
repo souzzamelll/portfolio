@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8F8"/>
+      <stop offset="45%" stop-color="#FCECEF"/>
+      <stop offset="85%" stop-color="#F7E2E8"/>
+      <stop offset="100%" stop-color="#EED5DC"/>
+    </linearGradient>
+    <linearGradient id="accentG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E27396"/>
+      <stop offset="100%" stop-color="#B83A64"/>
+    </linearGradient>
+    <radialGradient id="softLight" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#FBE8ED" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#F5D5DE" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="600" height="700" rx="36" fill="url(#bgGlow)"/>
+  <rect width="600" height="700" rx="36" fill="url(#softLight)"/>
+
+  <!-- Decorative Delicate Concentric Arches / Rings -->
+  <g stroke="#EAB4C4" stroke-width="1.2" fill="none" opacity="0.6">
+    <ellipse cx="300" cy="330" rx="210" ry="250"/>
+    <ellipse cx="300" cy="330" rx="175" ry="215" stroke-dasharray="4 6"/>
+  </g>
+
+  <!-- Elegant Decorative Botanical Leaves -->
+  <g stroke="#C84B71" stroke-width="1.5" fill="none" opacity="0.45" stroke-linecap="round">
+    <!-- Left Leaf Stem -->
+    <path d="M120 540 Q150 430 180 340 Q195 280 230 230"/>
+    <path d="M165 400 Q190 390 200 410 Q180 420 165 400 Z" fill="#FCE7EC" opacity="0.6"/>
+    <path d="M185 330 Q215 320 220 340 Q200 350 185 330 Z" fill="#FCE7EC" opacity="0.6"/>
+    <path d="M205 270 Q235 255 245 275 Q225 285 205 270 Z" fill="#FCE7EC" opacity="0.6"/>
+    
+    <!-- Right Leaf Stem -->
+    <path d="M480 540 Q450 430 420 350 Q400 290 370 240"/>
+    <path d="M435 410 Q410 400 400 420 Q420 430 435 410 Z" fill="#FCE7EC" opacity="0.6"/>
+    <path d="M415 340 Q385 330 380 350 Q400 360 415 340 Z" fill="#FCE7EC" opacity="0.6"/>
+  </g>
+
+  <!-- Central Silhouette / Portrait Illustration -->
+  <g transform="translate(160, 150)">
+    <!-- Aura behind portrait -->
+    <circle cx="140" cy="140" r="125" fill="#FFFFFF" opacity="0.85"/>
+    <circle cx="140" cy="140" r="118" stroke="#F1BDCD" stroke-width="2" fill="none"/>
+
+    <!-- Stylized Minimalist Elegant Profile Illustration -->
+    <g fill="none" stroke="#A83556" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Hair & Flowing Bun -->
+      <path d="M140 70 C100 70 82 105 82 145 C82 175 92 205 110 225 C115 195 125 180 135 170 C125 155 125 130 130 115 C135 100 150 90 165 92 C178 95 188 105 192 120 C196 135 190 152 185 165 C175 185 172 210 175 230 C195 210 205 175 205 140 C205 95 175 70 140 70 Z" fill="#FCE7EC" opacity="0.9"/>
+      
+      <!-- Elegant profile line -->
+      <path d="M145 115 Q155 132 153 145 Q151 152 144 157 Q150 165 146 172 Q138 185 146 195 Q150 200 160 215"/>
+      
+      <!-- Delicate Neck & Shoulder Arc -->
+      <path d="M132 205 C130 225 115 245 90 260"/>
+      <path d="M156 210 C162 230 185 248 215 260"/>
+      
+      <!-- Stylized floral hairpiece -->
+      <circle cx="115" cy="130" r="12" fill="#E27396" opacity="0.25" stroke="#C84B71" stroke-width="1.5"/>
+      <circle cx="115" cy="130" r="4" fill="#C84B71"/>
+      <path d="M106 123 Q115 115 124 123 Q115 131 106 123 Z" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Star / Sparkles -->
+    <path d="M225 90 Q225 100 235 100 Q225 100 225 110 Q225 100 215 100 Q225 100 225 90 Z" fill="#C84B71"/>
+    <path d="M60 170 Q60 178 68 178 Q60 178 60 186 Q60 178 52 178 Q60 178 60 170 Z" fill="#E27396"/>
+    <circle cx="230" cy="180" r="3" fill="#D65A80"/>
+    <circle cx="70" cy="110" r="2.5" fill="#E27396"/>
+  </g>
+
+  <!-- Editorial Badge Card at bottom -->
+  <g transform="translate(110, 520)">
+    <rect width="380" height="110" rx="24" fill="#FFFFFF" fill-opacity="0.92" filter="url(#softGlow)"/>
+    <rect width="380" height="110" rx="24" stroke="#F4C2D0" stroke-width="1.5" fill="none"/>
+
+    <!-- Small Camera / Photo Icon -->
+    <circle cx="50" cy="55" r="24" fill="#FDF2F4"/>
+    <path d="M42 50 L46 44 L54 44 L58 50 L62 50 C63.5 50 64.5 51 64.5 52.5 L64.5 63.5 C64.5 65 63.5 66 62 66 L38 66 C36.5 66 35.5 65 35.5 63.5 L35.5 52.5 C35.5 51 36.5 50 38 50 Z" stroke="#C84B71" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+    <circle cx="50" cy="57" r="5" stroke="#C84B71" stroke-width="1.8" fill="none"/>
+
+    <!-- Text -->
+    <text x="90" y="47" font-family="'Poppins', sans-serif" font-size="13" font-weight="600" fill="#3D2B33" letter-spacing="0.5">Espaço para Foto Pessoal</text>
+    <text x="90" y="70" font-family="'Poppins', sans-serif" font-size="11" font-weight="400" fill="#7D6570">Substitua por sua imagem quando desejar</text>
+    <text x="90" y="88" font-family="'Poppins', sans-serif" font-size="10" font-weight="500" fill="#C84B71">✦ Melissa • Estudante de TI</text>
+  </g>
+
+  <!-- Subtle corner aesthetic marks -->
+  <text x="40" y="55" font-family="'Cormorant Garamond', Georgia, serif" font-size="14" font-style="italic" fill="#C84B71" letter-spacing="2">PORTFOLIO // 2026</text>
+  <text x="560" y="55" font-family="'Cormorant Garamond', Georgia, serif" font-size="14" font-style="italic" fill="#C84B71" text-anchor="end">MELISSA</text>
+</svg>
